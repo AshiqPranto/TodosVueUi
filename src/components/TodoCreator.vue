@@ -28,7 +28,9 @@
     <div class="input-wrap" :class="{ 'input-err': todoState.invalid}">
         <input type="text" v-model="todoState.todo"/>
         <TodoButton @click="createTodo">
-          Create
+          <template #slot1>
+            Create task
+          </template>
         </TodoButton>
         <!-- <button @click="createTodo()">Create task</button> -->
     </div>

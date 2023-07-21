@@ -5,7 +5,7 @@
 
 <template>
     <button>
-        <slot>
+        <slot name="slot1">
 
         </slot>
     </button>
